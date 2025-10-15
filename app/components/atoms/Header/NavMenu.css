@@ -1,0 +1,50 @@
+.ant-menu-dark .ant-menu-item-icon {
+  transition: all 0.3s ease;
+}
+
+.ant-menu-dark .ant-menu-item:hover .ant-menu-item-icon {
+  color: #00ffff !important; /* Azul neón más brillante */
+  filter: drop-shadow(0 0 6px #00ffff);
+}
+
+/* Fondo del menú */
+.ant-menu-dark {
+  background: #000033 !important;
+}
+
+/* Cada item del menú */
+.ant-menu-item {
+  margin: 0 12px !important; /* separación horizontal */
+  border-radius: 12px !important; /* bordes redondeados */
+  transition: all 0.3s ease;
+}
+
+/* Ícono dentro del item */
+.nav-icon {
+  color: #00bfff;
+  font-size: 22px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Hover efecto luminoso */
+.ant-menu-item:hover .nav-icon {
+  color: #00ffff;
+  background-color: rgba(0, 191, 255, 0.15);
+  box-shadow: 0 0 8px #00ffff;
+  transform: scale(1.1);
+}
+
+/* Eliminar borde o subrayado de selección */
+.ant-menu-item-selected::after {
+  display: none !important;
+}
+
+/* Mantener color en item seleccionado */
+.ant-menu-item-selected .nav-icon {
+  color: #00ffff;
+  background-color: rgba(0, 191, 255, 0.2);
+  box-shadow: 0 0 10px #00ffff;
+}
