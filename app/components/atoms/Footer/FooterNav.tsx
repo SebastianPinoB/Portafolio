@@ -1,13 +1,18 @@
 import React from "react";
-import { Menu } from "antd";
+import { Space } from "antd"; // Importamos Space en lugar de Menu
 import { GithubOutlined, LinkedinOutlined} from "@ant-design/icons";
 
 const FooterNav = () =>{
    return(
-      <Menu mode="horizontal" items={[
-         { key: "1", icon: <GithubOutlined style={{ color: "#00BFFF", fontSize: "20px"}} /> },
-         { key: "2", icon: <LinkedinOutlined style={{ color: "#00BFFF", fontSize: "20px"}} /> },
-      ]}/>
+      <Space size="large">
+         <a href="#" target="_blank">
+            <GithubOutlined style={{ color: "white", fontSize: "24px"}} />
+         </a>
+
+         <a href="#" target="_blank">
+            <LinkedinOutlined style={{ color: "white", fontSize: "24px"}} />
+         </a>
+      </Space>
    )
 }
 

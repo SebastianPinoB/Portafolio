@@ -5,9 +5,9 @@ const { Paragraph } = Typography
 
 const FooterPoliticasTerminos = () =>{
    return(
-      <Flex gap={80} style={{ marginTop: "40px" }}>
-         <Paragraph>Politica de Privacidad</Paragraph>
-         <Paragraph>Terminos de Servicio</Paragraph>
+      <Flex gap={80} style={{ marginTop: "40px", color:"#FFFF"}}>
+         <Paragraph style={{color:"#FFFF"}}>Politica de Privacidad</Paragraph>
+         <Paragraph style={{color:"#FFFF"}}>Terminos de Servicio</Paragraph>
       </Flex>
       
    )

@@ -8,7 +8,7 @@ const Footer = () =>{
       <Flex vertical align="center"
       style={{
          textAlign: "center",
-         marginTop: "100px", // separación superior
+         marginTop: "140px", // separación superior
          gap:"30px"
       }}>
          <FooterPoliticasTerminos />

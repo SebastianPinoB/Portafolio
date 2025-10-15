@@ -1,0 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  
+  /* Opcional: Para asegurar que el contenedor principal ocupe toda la altura */
+  min-height: 100vh;
+  background-color: "#1A202C";
+}
