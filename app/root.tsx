@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import IconoDock from "./components/atoms/Header/NavMenu";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,7 +34,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        {/* Barra de navegación siempre visible */}
+        <IconoDock />
+
+        {/* Contenido de la página */}
         {children}
+
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -42,7 +48,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return <Outlet />; // Aquí se renderizan las páginas según la ruta
+
+  
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

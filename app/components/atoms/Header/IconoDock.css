@@ -1,0 +1,16 @@
+.dock-container {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.dock-hidden {
+  opacity: 0;
+  transform: translateY(-80px); /* 👈 ahora se mueve hacia arriba al desaparecer */
+  pointer-events: none;
+}
+
+.dock-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
