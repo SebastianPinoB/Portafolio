@@ -9,7 +9,7 @@ const MainHeader = () => {
    return (
       <Header style={{
          backgroundColor: "#1A202C",
-         padding: '0', // ¡Ajuste clave! Esto anula el padding horizontal predeterminado.
+         padding: '0',
          height: 'auto'
       }}>
          <NavMenu />

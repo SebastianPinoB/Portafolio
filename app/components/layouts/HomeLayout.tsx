@@ -1,9 +1,12 @@
 import React from "react";
-import MainHeader from "../molecules/Header/MainHeader";
+import IconoDock from "../atoms/Header/NavMenu";
 import MainBody from "../organisms/MainBody/MainBody";
 import Footer from "../molecules/Footer/Footer";
-import { Flex } from "antd";
+import Photo from "../atoms/AcercaDe/Photo";
+import { Flex, Typography, Divider } from "antd";
+import Lenguages from "../atoms/AcercaDe/lenguages";
 
+const { Paragraph } = Typography;
 
 const HomeLayout = () => {
    return (
@@ -13,8 +16,46 @@ const HomeLayout = () => {
             minHeight: "100vh", // Asegura que cubra toda la altura de la página
          }}
       >
-         <MainHeader></MainHeader>
+         <IconoDock></IconoDock>
          <MainBody></MainBody>
+
+         <Flex style={{
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "50px 450px", // opcional, para separarlo de los bordes
+         }} gap={80}>
+            <Photo />
+            <Flex vertical>
+               <Divider
+                  orientation="left"
+                  // Asegúrate de que la línea se vea en el fondo oscuro
+                  style={{
+                     // Propiedad para el color de la línea
+                     borderColor: '#00BFFF', // Usamos un color brillante (Cyan)
+
+                     // Opcional: Estilo para el texto dentro del Divider
+                     color: "white",
+                     fontSize: "42px",
+                     fontWeight: "700",
+
+                  }}
+               >
+                  <span id="acercaDe">Acerca de mi</span>
+               </Divider>
+
+               <Paragraph style={{
+                  fontSize: "16px", // Aumentar el tamaño de la fuente
+                  maxWidth: "600px",
+                  color: "#FFFFFF"
+               }}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum voluptates dicta ab expedita distinctio rem voluptatum saepe odio quis, itaque beatae recusandae, suscipit eos voluptas consequuntur architecto, mollitia dolorum!
+               </Paragraph><Lenguages></Lenguages>
+            </Flex>
+      
+         </Flex>
+         
+         
+
          <Footer />
       </Flex>
    )

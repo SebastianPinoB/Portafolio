@@ -14,7 +14,6 @@ const TextMenu = () => {
          }}
       >
          <Title level={1} style={{
-            fontFamily: 'Montserrat',
             color: "#FFFFFF",
             fontSize: "64px", 
             fontWeight: "900",

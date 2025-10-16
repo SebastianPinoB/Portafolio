@@ -32,9 +32,9 @@ const IconoDock: React.FC = () => {
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const icons = [
-    { key: "home", to: "/", icon: <HomeOutlined style={estiloIconos} />, label: "Inicio" },
-    { key: "projects", to: "/proyectos", icon: <FolderOpenOutlined style={estiloIconos} />, label: "Proyectos" },
-    { key: "profile", to: "/perfil", icon: <UserOutlined style={estiloIconos} />, label: "Perfil" },
+    { key: "home", to: "#inicio", icon: <HomeOutlined style={estiloIconos} />, label: "Inicio" },
+    { key: "projects", to: "#proyectos", icon: <FolderOpenOutlined style={estiloIconos} />, label: "Proyectos" },
+    { key: "profile", to: "#acercaDe", icon: <UserOutlined style={estiloIconos} />, label: "Perfil" },
   ];
 
   //Oculta el dock tras 3 segundos
