@@ -12,10 +12,15 @@ interface ProyectosCardProps {
 
 const ProyectosCard = ({ titulo, descripcion, imagenUrl }: ProyectosCardProps) => {
     return (
-        <Card hoverable title={titulo} style={{ width: 300 }} >
+        <Card
+            hoverable
+            title={titulo}
+            style={{ width: 300 }}
             cover={
-                <img src="{imagenUrl}"/>
+                <img src={imagenUrl} />
             }
+        >
+
             <Space direction="vertical" size="middle">
                 <p>{descripcion}</p>
             </Space>

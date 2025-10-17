@@ -19,10 +19,13 @@ const HomeLayout = () => {
             minHeight: "100vh", // Asegura que cubra toda la altura de la página
          }}
       >
+         {/**Menu Flotante*/}
          <IconoDock></IconoDock>
          <MainBody></MainBody>
 
+         {/**Seccion Acerca de mi */}
          <Flex style={{
+            paddingTop: "150px",
             justifyContent: "center",
             alignItems: "center",
             padding: "50px 450px", // opcional, para separarlo de los bordes
@@ -30,7 +33,7 @@ const HomeLayout = () => {
             <Photo />
             <Flex vertical>
                <Divider
-                  orientation="left"
+                  orientation="right"
                   // Asegúrate de que la línea se vea en el fondo oscuro
                   style={{
                      // Propiedad para el color de la línea
@@ -59,11 +62,61 @@ const HomeLayout = () => {
 
          </Flex>
 
-         <ProyectosCard 
-         titulo={"Chupala"} 
-         descripcion={"shapalapashala"}
-         imagenUrl = {"app/assets/bg_card_3.png"}
-          />
+
+         {/**Seccion proyectos*/}
+         <Flex vertical
+            style={{
+               paddingTop: "150px",
+               justifyContent: "center",
+               alignItems: "center",
+               padding: "50px 400px", // opcional, para separarlo de los bordes
+            }}
+         >
+            <Divider
+               orientation="center"
+               // Asegúrate de que la línea se vea en el fondo oscuro
+               style={{
+                  // Propiedad para el color de la línea
+                  borderColor: '#00BFFF', // Usamos un color brillante (Cyan)
+
+                  // Opcional: Estilo para el texto dentro del Divider
+                  color: "white",
+                  fontSize: "42px",
+                  fontWeight: "700",
+
+               }}
+            >
+               <span id="proyectos">Proyectos</span>
+            </Divider>
+            <Flex
+               style={{
+                  justifyContent: "center",
+                  gap: "80px", // 👈 separa cada Card
+               }}
+            >
+               <ProyectosCard
+                  titulo={"Proyecto1"}
+                  descripcion={"shapalapashala"}
+                  imagenUrl={"/app/assets/bg_card_3.png"}
+               />
+
+               <ProyectosCard
+                  titulo={"Proyecto 2"}
+                  descripcion={"shapalapashala"}
+                  imagenUrl={"/app/assets/bg_card_1.png"}
+               />
+
+               <ProyectosCard
+                  titulo={"Proyyecto 3"}
+                  descripcion={"shapalapashala"}
+                  imagenUrl={"/app/assets/bg_card_2.png"}
+               />
+
+            </Flex>
+
+         </Flex>
+
+
 
          <Footer />
       </Flex>

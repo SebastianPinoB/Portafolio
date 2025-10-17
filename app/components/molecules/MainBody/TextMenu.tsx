@@ -19,7 +19,7 @@ const TextMenu = () => {
             fontWeight: "900",
             letterSpacing: "2px", 
             textTransform: "uppercase", 
-            textShadow: "0 0 20px rgba(17, 115, 212, 0.6)", 
+            textShadow: "0 0 20px rgba(17, 115, 212, 0.6)",
          }}
          >Sebastian Pino</Title>
          <Paragraph
