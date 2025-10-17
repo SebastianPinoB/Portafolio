@@ -95,21 +95,21 @@ const HomeLayout = () => {
                }}
             >
                <ProyectosCard
-                  titulo={"Proyecto1"}
+                  titulo={"Panel de administracion"}
                   descripcion={"shapalapashala"}
-                  imagenUrl={"/app/assets/bg_card_3.png"}
+                  imagenUrl={"/app/assets/1.jpg"}
                />
 
                <ProyectosCard
-                  titulo={"Proyecto 2"}
+                  titulo={"Formulario de registro"}
                   descripcion={"shapalapashala"}
-                  imagenUrl={"/app/assets/bg_card_1.png"}
+                  imagenUrl={"/app/assets/2.jpg"}
                />
 
                <ProyectosCard
-                  titulo={"Proyyecto 3"}
+                  titulo={"Proyecto Flex"}
                   descripcion={"shapalapashala"}
-                  imagenUrl={"/app/assets/bg_card_2.png"}
+                  imagenUrl={"/app/assets/3.jpg"}
                />
 
             </Flex>

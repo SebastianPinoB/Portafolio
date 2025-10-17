@@ -1,0 +1,39 @@
+.card-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* opacidad base */
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+
+.card-container:hover .card-bg {
+  transform: scale(1.1); /* zoom de la imagen */
+}
+
+.card-container:hover .card-overlay {
+  background: rgba(0, 0, 0, 0.85); /* overlay más oscuro al hover */
+}
+
+.proyecto-card .card-text {
+  transition: transform 0.4s ease;
+}
+
+.card-container:hover .proyecto-card .card-text {
+  transform: translateY(-5px);
+}
