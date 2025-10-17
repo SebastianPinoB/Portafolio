@@ -4,7 +4,10 @@ import MainBody from "../organisms/MainBody/MainBody";
 import Footer from "../molecules/Footer/Footer";
 import Photo from "../atoms/AcercaDe/Photo";
 import { Flex, Typography, Divider } from "antd";
-import Lenguages from "../atoms/AcercaDe/lenguages";
+import Lenguages from "../atoms/AcercaDe/Lenguages";
+import ProyectosCard from "../molecules/Proyectos/ProyectosCard";
+
+import "app/assets/bg_card_3.png"
 
 const { Paragraph } = Typography;
 
@@ -49,12 +52,18 @@ const HomeLayout = () => {
                   color: "#FFFFFF"
                }}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum voluptates dicta ab expedita distinctio rem voluptatum saepe odio quis, itaque beatae recusandae, suscipit eos voluptas consequuntur architecto, mollitia dolorum!
-               </Paragraph><Lenguages></Lenguages>
+               </Paragraph>
+               <Lenguages></Lenguages>
             </Flex>
-      
+
+
          </Flex>
-         
-         
+
+         <ProyectosCard 
+         titulo={"Chupala"} 
+         descripcion={"shapalapashala"}
+         imagenUrl = {"app/assets/bg_card_3.png"}
+          />
 
          <Footer />
       </Flex>

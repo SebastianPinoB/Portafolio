@@ -1,4 +1,3 @@
-// src/pages/Perfil/PerfilPage.tsx
 import React from 'react';
 import { Typography, Card, Flex } from 'antd'; // Importamos componentes de Antd para el estilo
 
