@@ -37,3 +37,17 @@
 .card-container:hover .proyecto-card .card-text {
   transform: translateY(-5px);
 }
+
+/* Ocultamos el texto por defecto */
+.card-text {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Cuando se hace hover sobre la tarjeta, aparece el texto */
+.proyecto-card:hover .card-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+

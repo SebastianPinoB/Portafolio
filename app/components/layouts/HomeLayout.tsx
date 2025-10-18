@@ -9,7 +9,7 @@ import ProyectosCard from "../molecules/Proyectos/ProyectosCard";
 
 import "app/assets/bg_card_3.png"
 
-const { Paragraph } = Typography;
+const { Paragraph, Title } = Typography;
 
 const HomeLayout = () => {
    return (
@@ -88,27 +88,29 @@ const HomeLayout = () => {
             >
                <span id="proyectos">Proyectos</span>
             </Divider>
+
             <Flex
                style={{
                   justifyContent: "center",
                   gap: "80px", // 👈 separa cada Card
                }}
             >
+               
                <ProyectosCard
                   titulo={"Panel de administracion"}
-                  descripcion={"shapalapashala"}
+                  descripcion={"Demostración de un panel de administración completo, diseñado para ofrecer una visualización de datos clara y una experiencia de usuario intuitiva para la gestión de métricas clave."}
                   imagenUrl={"/app/assets/1.jpg"}
                />
 
                <ProyectosCard
                   titulo={"Formulario de registro"}
-                  descripcion={"shapalapashala"}
+                  descripcion={"Formulario de registro completo enfocado en la conversión y usabilidad. La implementación asegura una entrada de datos robusta mediante validaciones dinámicas en el lado del cliente (Front-end)."}
                   imagenUrl={"/app/assets/2.jpg"}
                />
 
                <ProyectosCard
                   titulo={"Proyecto Flex"}
-                  descripcion={"shapalapashala"}
+                  descripcion={"Serie de componentes y layouts complejos creados exclusivamente con Flexbox. El objetivo fue practicar el control de la alineación, la distribución de espacio y la adaptabilidad de los elementos internos."}
                   imagenUrl={"/app/assets/3.jpg"}
                />
 
