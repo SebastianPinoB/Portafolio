@@ -16,7 +16,6 @@ const TextMenu = () => {
             color: "#FFFFFF",
             fontSize: "64px", 
             fontWeight: "900",
-            letterSpacing: "2px", 
          }}
          >Hola, soy Sebastian Pino</Title>
          <Paragraph
@@ -26,7 +25,7 @@ const TextMenu = () => {
                maxWidth: "800px", // Limitar el ancho para que el texto no sea muy largo
                padding: "0 20px", // Añadir un poco de padding horizontal
                paddingTop: "15px",
-               paddingBottom:"70px",
+               paddingBottom:"50px",
                color: "#FFFFFF" // Un color gris oscuro para el texto
             }}
          >

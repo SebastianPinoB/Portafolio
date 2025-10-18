@@ -8,11 +8,10 @@ const Footer = () =>{
       <Flex vertical align="center"
       style={{
          textAlign: "center",
-         marginTop: "140px", // separación superior
-         gap:"30px"
+         marginTop: "100px", // separación superior
+         gap:"20px"
       }}>
          <FooterPoliticasTerminos />
-         <FooterNav />
          <FooterCopy />
       </Flex>
    )
