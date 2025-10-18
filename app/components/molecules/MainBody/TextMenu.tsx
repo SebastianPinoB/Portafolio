@@ -9,8 +9,7 @@ const TextMenu = () => {
          align="center"
          style={{
             textAlign: "center",
-            marginTop: "100px",
-            marginBottom: "30px"
+            marginTop: "300px",
          }}
       >
          <Title level={1} style={{
@@ -18,10 +17,8 @@ const TextMenu = () => {
             fontSize: "64px", 
             fontWeight: "900",
             letterSpacing: "2px", 
-            textTransform: "uppercase", 
-            textShadow: "0 0 20px rgba(17, 115, 212, 0.6)",
          }}
-         >Sebastian Pino</Title>
+         >Hola, soy Sebastian Pino</Title>
          <Paragraph
             style={{
                fontSize: "16px", // Aumentar el tamaño de la fuente
@@ -29,14 +26,11 @@ const TextMenu = () => {
                maxWidth: "800px", // Limitar el ancho para que el texto no sea muy largo
                padding: "0 20px", // Añadir un poco de padding horizontal
                paddingTop: "15px",
+               paddingBottom:"70px",
                color: "#FFFFFF" // Un color gris oscuro para el texto
             }}
          >
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-            Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
-            cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
-            No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
-            Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+            Estudiante de Ingenieria en programacion
          </Paragraph>
 
       </Flex>

@@ -10,9 +10,10 @@ interface ProyectosCardProps {
   titulo: string;
   descripcion: string;
   imagenUrl: string;
+  urlProyecto: string;
 }
 
-const ProyectosCard = ({ titulo, descripcion, imagenUrl }: ProyectosCardProps) => {
+const ProyectosCard = ({ titulo, descripcion, imagenUrl, urlProyecto }: ProyectosCardProps) => {
   return (
     <Flex vertical
       style={{
@@ -25,6 +26,7 @@ const ProyectosCard = ({ titulo, descripcion, imagenUrl }: ProyectosCardProps) =
       <div className="card-container">
         {/* Tarjeta de Ant Design solo para el texto */}
         <Card
+          onClick={() => window.open(urlProyecto, "_blank")}
           hoverable
           className="proyecto-card"
           style={{

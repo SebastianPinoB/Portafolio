@@ -4,7 +4,7 @@ import { Button, Flex } from "antd";
 
 const MainBody = () =>{
    return(
-      <Flex vertical align="center">
+      <Flex vertical align="center" style={{paddingBottom:"100px"}}>
          <TextMenu></TextMenu>
          <Button type="primary" size="large" style={{ width: "fit-content" }}>Mis proyectos</Button>
       </Flex>
